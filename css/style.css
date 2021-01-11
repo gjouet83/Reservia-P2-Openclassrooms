@@ -1,11 +1,41 @@
+body
+{
+    margin: 5%;
+    font-family: 'RalewayReg';
+    font-size: 1em;
+}
+#logo
+{
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+}
+#ancres
+{
+    margin-left: 65%;
+    display: flex;
+    justify-content: space-around;
+}
+@font-face {
+    font-family: 'RalewayReg';
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+@font-face {
+    font-family: 'RalewayBold';
+    src: url('../fonts/Raleway-Bold.ttf');
+}
+.bold
+{
+    font-family: 'RalewayBold';
+}
+
+.title 
+{
+    clear: both;
+}
 h1
 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.5em;
+    font-family: 'RalewayBold';
+    font-size: 1.3em;
     font-weight: bold;
-}
-p
-{
-    font-family: 'Raleway', sans-serif;
-    font-size: 1em;
 }
