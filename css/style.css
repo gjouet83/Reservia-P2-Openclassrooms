@@ -1,3 +1,5 @@
+/* Intégration des fonts */
+
 @font-face {
   font-family: "RalewayReg";
   src: url("../fonts/Raleway-Regular.ttf");
@@ -8,30 +10,114 @@
   src: url("../fonts/Raleway-Bold.ttf");
 }
 
-.bold {
-  font-family: "RalewayBold";
-}
-
-h1 {
-  font-family: "RalewayBold";
-  font-size: 1.3rem;
-  font-weight: bold;
-}
+/* Layout Général */
 
 body {
   margin: 5%;
   font-family: "RalewayReg";
+}
+
+body h1 {
+  font-family: "RalewayBold";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Classe Générale */
+
+.bold {
+  font-family: "RalewayBold";
+}
+
+/* Classe */
+
+.logo {
+  width: 70%;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero h2 {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.search img {
+  width: 20px;
+  height: 20px;
+}
+
+.filters {
+  font-family: "RalewayBold";
+  font-size: 1.3rem;
+}
+
+.filters img {
+  width: 20px;
+  height: 20px;
+}
+
+.info img {
+  width: 25px;
+  height: 25px;
+}
+
+.help {
+  column-span: all;
+}
+
+/* Header */
+
+header {
+  display: flex;
+}
+
+/* Nav */
+
+nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: baseline;
+}
+
+nav a:hover {
+  color: #0065fc;
+  text-decoration-line: overline;
+}
+
+nav span {
+  color: #0065fc;
+}
+
+/* Footer */
+
+footer {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul {
+  list-style-type: none;
+  margin-left: 0%;
+  text-align: left;
+  font-size: 1rem;
+  vertical-align: baseline;
+}
+
+footer h1 {
   font-size: 1rem;
 }
 
-.logo {
-  display: inline-flex;
-  justify-content: left;
-}
-
-nav a {
-  display: inline-flex;
-  margin: 1rem;
-  vertical-align: top;
-  justify-content: space-between;
+footer a {
+  margin-bottom: 1.3rem;
 }
