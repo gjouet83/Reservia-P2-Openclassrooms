@@ -13,12 +13,16 @@
 /* Layout Général */
 
 body {
-  margin: 5%;
+  margin: 0;
   font-family: "RalewayReg";
 }
 
 body h1 {
   font-family: "RalewayBold";
+}
+
+main {
+  margin: 4%;
 }
 
 a {
@@ -35,7 +39,7 @@ a {
 /* Classe */
 
 .logo {
-  width: 70%;
+  width: 60%;
   display: flex;
   margin-bottom: 1.5rem;
 }
@@ -49,20 +53,30 @@ a {
   font-size: 1rem;
   margin-top: 0.5rem;
 }
+.search {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
 
-.search img {
+.champs img {
   width: 20px;
   height: 20px;
 }
-
 .filters {
+  margin-top: 2rem;
+  display: flex;
+  align-content: baseline;
+  justify-content: space-between;
   font-family: "RalewayBold";
   font-size: 1.3rem;
 }
 
 .filters img {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .info img {
@@ -70,8 +84,32 @@ a {
   height: 25px;
 }
 
+.results_area {
+  width: 70%;
+  height: auto;
+  background-color: #f2f2f2;
+}
+
+.results_area img {
+  width: 25%;
+  height: 6rem;
+}
+
+.about {
+  padding-left: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.charter {
+  display: flex;
+  flex-direction: column;
+}
+
 .help {
-  column-span: all;
+  padding-right: 30%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */
@@ -83,7 +121,7 @@ header {
 /* Nav */
 
 nav {
-  width: 30%;
+  width: 40%;
   display: flex;
   justify-content: space-between;
   vertical-align: baseline;
@@ -101,20 +139,14 @@ nav span {
 /* Footer */
 
 footer {
-  width: 70%;
+  background-size: 100%;
+  background-color: #f2f2f2;
   display: flex;
   justify-content: space-between;
 }
 
-footer ul {
-  list-style-type: none;
-  margin-left: 0%;
-  text-align: left;
-  font-size: 1rem;
-  vertical-align: baseline;
-}
-
 footer h1 {
+  margin-bottom: 2rem;
   font-size: 1rem;
 }
 
