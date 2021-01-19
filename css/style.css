@@ -18,8 +18,8 @@ body {
 }
 
 main {
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 a {
@@ -35,34 +35,44 @@ h1 {
 
 header {
   display: flex;
-  flex-wrap: wrap;
-}
-
-header h1 {
-  margin-top: 2rem;
-  margin-bottom: 0px;
-  font-size: 1.3rem;
+  justify-content: space-between;
 }
 
 /* Classes Header */
 
 .logo {
-  margin-top: 55px;
-  width: 70%;
+  width: 43.2%;
+  padding-left: 4px;
+  margin-top: 52px;
+  margin-bottom: 18px;
+}
+
+.logo h1 {
+  font-size: 1.36rem;
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-left: 4px;
+}
+
+.logo p {
+  font-size: 1rem;
+  margin-top: 8px;
+  margin-bottom: 0;
+  padding-left: 4px;
 }
 
 /* Nav */
 
 nav {
-  width: 30%;
+  width: 32.5%;
   display: flex;
   justify-content: space-between;
 }
 
 nav a {
-  display: block;
-  padding-top: 55px;
-
+  padding-top: 52px;
+  padding-left: 28px;
+  padding-right: 28px;
 }
 
 nav a:hover {
@@ -78,52 +88,42 @@ nav span {
 
 /* Sections */
 
-section.results h1 {
-  font-size: 1.3rem;
-  margin-top: 0;
-}
-
-section.results {
-  display: flex;
-  justify-content: space-between;
-}
-
-section.results figure {
-  margin: 0;
-  width: 30%;
-}
-
 section.search {
   margin-bottom: 2rem;
   font-size: 1rem;
 }
 
+#results {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Classes sections */
-.champs {
+/* barre de recherche */
+.search_bar {
   display: flex;
   align-items: baseline;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   width: 30%;
   border: 1px solid #f2f2f2;
-  border-radius: 15px;
+  border-radius: 12px;
 }
 
-.champs p {
+.field p {
   border-left: 1px solid #f2f2f2;
   border-right: 1px solid #f2f2f2;
 }
 
-.champs img {
+.location img {
   width: 16px;
   height: 16px;
 }
 
+/* les filtres */
 .filters {
   margin-top: 2rem;
-  padding-left: 0.5rem;
+  padding-left: 12px;
   width: 65%;
   display: flex;
   align-items: center;
@@ -137,45 +137,47 @@ section.search {
   text-align: end;
   padding-right: 2rem;
   border: 2px solid #f2f2f2;
-  border-radius: 30px;
+  border-radius: 25px;
 }
 
 .family {
   display: flex;
   align-items: center;
   border: 2px solid #f2f2f2;
-  border-radius: 30px;
+  border-radius: 25px;
 }
 
 .romantic {
   display: flex;
   align-items: center;
   border: 2px solid #f2f2f2;
-  border-radius: 30px;
+  border-radius: 25px;
 }
 
 .animals {
   display: flex;
   align-items: center;
   border: 2px solid #f2f2f2;
-  border-radius: 30px;
+  border-radius: 25px;
 }
 
 .filters img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 }
 
+/* info nombre de logement*/
 .info img {
   width: 25px;
   height: 25px;
 }
 
+/* résultats div gauche */
 .results_area {
   display: flex;
   flex-wrap: wrap;
   border-radius: 20px;
-  width: 60%;
+  width: 61%;
   height: auto;
   padding: 2rem;
   background-color: #f2f2f2;
@@ -186,17 +188,38 @@ section.search {
   height: 6rem;
 }
 
+.results_area h1 {
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+
+.results_area figure {
+  margin: 0;
+  width: 30%;
+}
+
+/* résultats div droit */
 .most_famous {
   border-radius: 20px;
-  width: 28%;
+  width: 26.5%;
   height: auto;
   padding: 2rem;
   background-color: #f2f2f2;
 }
 
+.most_famous h1 {
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+
 .most_famous img {
   width: 6rem;
   height: 6rem;
+}
+
+.most_famous figure {
+  margin: 0;
+  width: 30%;
 }
 
 /* Footer */

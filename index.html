@@ -9,32 +9,36 @@
     <body>
         <main>
         <!--Header-->
-
             <header>
+                <!-- le logo -->
                 <div class= "logo">
                     <img src="img/logo/Reservia.svg" alt="logo du site" />
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1> 
+                    <p>En plein centre ville ou en pleine nature</p>
                 </div>
+                <!-- la barre de navigation -->
                 <nav>
-                    <a href="#herbergement">Hébergements</a>
-                    <a href="#activite">Activités</a>
+                    <a href="#results">Hébergements</a>
+                    <a href="#activities">Activités</a>
                     <a href="#"><span>S'inscrire</span></a>
-                </nav>  
-                <p>En plein centre ville ou en pleine nature</p>
+                </nav> 
             </header>
-
+            
         <!--Sections-->
 
             <!--search-->
-
+            <!-- section search avec 2 div -->
             <section class="search">
-                <div class="champs">
-                    <a href="location"><img src="img/icones/location.svg" alt="icone localisation"/></a>
-                    <p>Marseille,France</p>
-                    <a href="search">Rechercher</a>
+                <!-- barre de recherche --> 
+                <div class="search_bar">
+                    <div class="location"><a href="location"><img src="img/icones/location.svg" alt="icone localisation"/></a></div>
+                    <div class="field"><p>Marseille,France</p></div>
+                    <div class="search_button"><a href="search">Rechercher</a></div>
                 </div>
+                <!-- filtres de recherche -->
                 <div class="filters">    
                     <span>Filtres</span>
+                    <!-- les boutons des filtres -->
                     <div class="eco">
                         <img src="img/icones/economical.svg" alt="icone economique"/>
                         <a href="economical">Économique</a>
@@ -55,10 +59,15 @@
             </section>
 
             <!--results-->
+
+            <!--section info sur le nombre de logements trouvés-->
             <section class="info">
                 <p><img src="img/icones/info.svg" alt="icone info" />Plus de 500 logements sont disponibles dans cette ville</p>
             </section>
-            <section class="results">
+
+            <!--section resultas hébergement -->
+            <section id="results">
+                <!-- div de gauche -->
                 <div class="results_area">
                     <h1>Hébergements à Marseille</h1>
                     <figure>
@@ -99,6 +108,7 @@
                     <img src="img/icones/5_Stars.svg" alt="Note" />
                     <p>Afficher plus</p>
                 </div>
+                <!-- div de droite les plus populaires -->
                 <div class="most_famous">
                     <h1>Les plus populaires</h1>
                     <figure>
@@ -124,7 +134,7 @@
 
             <!--activities-->
 
-            <section class="activities">
+            <section id="activities">
                 <h1>Activités à Marseille</h1>
                 <figure>
                     <img src="img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo de l'activité"/>
