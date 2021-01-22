@@ -12,15 +12,18 @@
 
 /* Layout Général */
 
+html {
+  font-size: 16px;
+}
+
 body {
-  height: 1884px;
   margin: 0;
   font-family: "RalewayReg";
 }
 
 main {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 3.5%;
+  margin-right: 3.5%;
 }
 
 a {
@@ -28,13 +31,14 @@ a {
   color: black;
 }
 
-h1 {
+h1, h2 {
   font-family: "RalewayBold";
+  font-size: 1.36rem;
 }
 
 /* Header */
 
-header {
+main header {
   display: flex;
   justify-content: space-between;
 }
@@ -45,21 +49,6 @@ header {
   width: 43.2%;
   padding-left: 4px;
   margin-top: 52px;
-  margin-bottom: 18px;
-}
-
-.logo h1 {
-  font-size: 1.36rem;
-  margin-top: 50px;
-  margin-bottom: 0;
-  padding-left: 4px;
-}
-
-.logo p {
-  font-size: 1rem;
-  margin-top: 8px;
-  margin-bottom: 0;
-  padding-left: 4px;
 }
 
 /* Nav */
@@ -67,13 +56,13 @@ header {
 nav {
   width: 32.5%;
   display: flex;
-  justify-content: space-between;
 }
 
 nav a {
+  display: block;
   padding-top: 52px;
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-left: 6.4%;
+  padding-right: 6.4%;
 }
 
 nav a:hover {
@@ -88,9 +77,21 @@ nav span {
 
 /* Sections */
 
+section.intro h1 {
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-left: 4px;
+}
+
+section.intro p {
+  font-size: 1rem;
+  margin-top: 8px;
+  margin-bottom: 19px;
+  padding-left: 4px;
+}
+
 section.info {
   display: flex;
-  height: 24px;
   align-items: center;
   margin-top: 35px;
   margin-bottom: 37px;
@@ -116,10 +117,9 @@ section.info p {
 /* barre de recherche */
 .search_bar {
   display: flex;
-  max-width: 420px;
-  min-width: 350px;
+  justify-content: space-between;
   width: 31.3%;
-  height: 49px;
+  min-width: 330px;
   border: 1px solid #f2f2f2;
   border-radius: 12px;
   overflow: hidden;
@@ -127,10 +127,9 @@ section.info p {
 
 .location {
   display: flex;
+  width: 11.7%;
   align-items: center;
   justify-content: center;
-  width: 52px;
-  height: 49px;
   background-color: #f2f2f2;
 }
 
@@ -141,39 +140,32 @@ section.info p {
 }
 
 .entry_field {
-  display: flex;
-  align-items: center;
-  width: 234px;
-  height: 49px;
-}
-
-.entry_field input {
   display: block;
   border: none;
-  padding-left: 13px;
   font-family: "RalewayBold";
   font-size: 1rem;
+}
+
+.entry_field:focus {
+  outline-style: none;
 }
 
 .search_button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 134px;
+  width: 31%;
+  max-width: 130px;
+  min-width: 100px;
   height: 49px;
+  border: none;
   background-color: #0065fc;
-}
-
-.search_button a {
-  display: block;
   font-family: "RalewayBold";
   font-size: 1rem;
   color: white;
+  cursor: pointer;
 }
 
 /* les filtres */
 .filters {
-  margin-top: 2rem;
+  margin-top: 35px;
   margin-bottom: 0;
   padding-left: 12px;
   width: 69%;
@@ -183,82 +175,95 @@ section.info p {
   font-family: "RalewayBold";
 }
 
-.filters img{
+.filters img {
   width: 50px;
   height: 50px;
 }
 
-.eco {
+.icon {
+  position: absolute;
+  background-color: #deebff;
+  border-radius: 27px;
+  width: 50px;
+  height: 50px;
+}
+
+.filters a {
+  display: block;
+  border-radius: 28px;
+  white-space: nowrap;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 61px;
+  padding-right: 22px;
+}
+
+.filters a:hover {
+  background-color: #0065fc;
+  color: white;
+}
+
+.filters_button {
   display: flex;
   align-items: center;
   border: 2px solid #f2f2f2;
   border-radius: 27px;
-}
-
-.eco span {
-  display: block;
-  padding-left: 13px;
-  padding-right: 22px;
-}
-
-.family {
-  display: flex;
-  align-items: center;
-  border: 2px solid #f2f2f2;
-  border-radius: 27px;
-}
-
-.family span {
-  display: block;
-  padding-left: 13px;
-  padding-right: 22px;
-}
-
-.romantic {
-  display: flex;
-  align-items: center;
-  border: 2px solid #f2f2f2;
-  border-radius: 27px;
-}
-
-.romantic span {
-  display: block;
-  padding-left: 13px;
-  padding-right: 22px;
-}
-
-.animals {
-  display: flex;
-  align-items: center;
-  border: 2px solid #f2f2f2;
-  border-radius: 27px;
-}
-
-.animals span {
-  display: block;
-  padding-left: 13px;
-  padding-right: 22px;
+  border-left: none;
 }
 
 /* résultats div gauche */
 .results_area {
-  display: flex;
-  flex-wrap: wrap;
   border-radius: 20px;
-  width: 61%;
-  height: auto;
-  padding: 2rem;
+  width: 63%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
   background-color: #f2f2f2;
 }
 
-.results_area img {
-  width: 25%;
-  height: 6rem;
+.thumbnails {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+}
+.thumbnail {
+  border-radius: 12px;
+  background-color: white;
+  white-space: nowrap;
+  margin: 4.5%;
+}
+.thumbnail p, h3 {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
 }
 
-.results_area h1 {
-  font-size: 1.3rem;
+.thumbnail span, h3 {
+  font-family: "RalewayBold";
+}
+
+.results_area h2 {
+  padding-left: 1.5%;
   margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+img.photos {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 4px;
+  padding-bottom: 0px;
+  width: 95.5%;
+  height: 25%;
+
+}
+
+img.stars {
+  padding-left: 1rem;
+  width: 60px;
 }
 
 .results_area figure {
@@ -268,14 +273,26 @@ section.info p {
 
 /* résultats div droit */
 .most_famous {
+  font-family: "RalewayBold";
+  font-size: 1.36rem;
   border-radius: 20px;
-  width: 26.5%;
-  height: auto;
-  padding: 2rem;
+  width: 25.5%;
+  padding: 3%;
   background-color: #f2f2f2;
 }
 
-.most_famous h1 {
+.header_pop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_pop img {
+  height: 1.36rem;
+}
+
+/*.most_famous strong {
+  display: block;
   font-size: 1.3rem;
   margin-top: 0;
 }
@@ -288,7 +305,7 @@ section.info p {
 .most_famous figure {
   margin: 0;
   width: 30%;
-}
+}*/
 
 /* Footer */
 
@@ -300,30 +317,23 @@ footer {
   justify-content: space-between;
 }
 
-footer h1 {
+footer span {
+  display: block;
+  font-family: "RalewayBold";
   margin-top: 0;
   margin-bottom: 1.3rem;
   font-size: 1rem;
+ 
 }
 
 footer a {
   margin-bottom: 0.5rem;
+  display: block;
+  
 }
 
 /* Classes Footer */
 
-.about {
-  display: flex;
-  flex-direction: column;
-}
-
-.charter {
-  display: flex;
-  flex-direction: column;
-}
-
 .help {
   padding-right: 30%;
-  display: flex;
-  flex-direction: column;
 }
