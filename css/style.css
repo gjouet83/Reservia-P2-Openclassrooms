@@ -38,7 +38,7 @@ h1, h2 {
 
 /* Header */
 
-main header {
+header {
   display: flex;
   justify-content: space-between;
 }
@@ -56,6 +56,7 @@ main header {
 nav {
   width: 32.5%;
   display: flex;
+  justify-content: space-between;
 }
 
 nav a {
@@ -323,13 +324,11 @@ footer span {
   margin-top: 0;
   margin-bottom: 1.3rem;
   font-size: 1rem;
- 
 }
 
 footer a {
   margin-bottom: 0.5rem;
   display: block;
-  
 }
 
 /* Classes Footer */
