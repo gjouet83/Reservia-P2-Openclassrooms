@@ -118,20 +118,17 @@ section.info p {
 /* barre de recherche */
 .search_bar {
   display: flex;
-  justify-content: space-between;
-  width: 31.3%;
-  min-width: 330px;
-  border: 1px solid #f2f2f2;
-  border-radius: 12px;
-  overflow: hidden;
 }
 
 .location {
   display: flex;
-  width: 11.7%;
+  max-width: 49px;
+  width: 49px;
   align-items: center;
   justify-content: center;
   background-color: #f2f2f2;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 
 .location img {
@@ -142,7 +139,11 @@ section.info p {
 
 .entry_field {
   display: block;
-  border: none;
+  width: 18%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 1px solid #f2f2f2;
+  justify-content: left;
   font-family: "RalewayBold";
   font-size: 1rem;
 }
@@ -157,6 +158,8 @@ section.info p {
   min-width: 100px;
   height: 49px;
   border: none;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
   background-color: #0065fc;
   font-family: "RalewayBold";
   font-size: 1rem;
