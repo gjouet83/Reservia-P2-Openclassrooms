@@ -395,6 +395,7 @@ section.info p {
 
 .activities_thumbnails {
   display: grid;
+
   justify-content: center;
   grid-template-columns: 25% 25% 25% 25%;
 }
@@ -405,8 +406,8 @@ section.info p {
   box-shadow: 0px 5px 10px #ccc8c8;
   border-radius: 12px;
   background-color: white;
-  margin: 4.5%;
   margin-left: 0;
+  margin-right: 4.5%;
 }
 
 .activities_thumbnail_2 {
@@ -415,7 +416,8 @@ section.info p {
   box-shadow: 0px 5px 10px #ccc8c8;
   border-radius: 12px;
   background-color: white;
-  margin: 4.5%;
+  margin-left: 4.5%;
+  margin-right: 4.5%;
 }
 
 .activities_thumbnail_3 {
@@ -424,7 +426,9 @@ section.info p {
   box-shadow: 0px 5px 10px #ccc8c8;
   border-radius: 12px;
   background-color: white;
-  margin: 4.5%;
+  margin-top: 43px;
+  margin-left: 4.5%;
+  margin-right: 4.5%;
 }
 
 .activities_thumbnail_4 {
@@ -433,7 +437,8 @@ section.info p {
   box-shadow: 0px 5px 10px #ccc8c8;
   border-radius: 12px;
   background-color: white;
-  margin: 4.5%;
+  margin-left: 4.5%;
+  margin-right: 4.5%;
 }
 
 .activities_thumbnail_5 {
@@ -442,7 +447,8 @@ section.info p {
   box-shadow: 0px 5px 10px #ccc8c8;
   border-radius: 12px;
   background-color: white;
-  margin: 4.5%;
+  margin-left: 4.5%;
+  margin-bottom: 45px;
   margin-right: 0;
 }
 
@@ -452,7 +458,7 @@ section.info p {
   box-shadow: 0px 5px 10px #ccc8c8;
   border-radius: 12px;
   background-color: white;
-  margin: 4.5%;
+  margin-left: 4.5%;
   margin-right: 0;
 }
 
@@ -461,7 +467,7 @@ section.info p {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  height: 426px;
+  height: 390px;
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
 }
@@ -491,7 +497,7 @@ section.info p {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  height: 426px;
+  height: 390px;
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
 }
@@ -518,31 +524,37 @@ section.info p {
 
 .activities_thumbnail_1 img {
   display: block;
-  width: 220%;
+  margin-top: 50px;
+  width: 230%;
 }
 
 .activities_thumbnail_2 img {
   display: block;
+  margin-top: 50px;
   width: 100%;
 }
 
 .activities_thumbnail_3 img {
   display: block;
+  margin-top: 50px;
   width: 100%;
 }
 
 .activities_thumbnail_4 img {
   display: block;
-  width: 300%;
+  margin-top: 50px;
+  width: 250%;
 }
 
 .activities_thumbnail_5 img {
   display: block;
+  margin-top: 50px;
   width: 100%;
 }
 
 .activities_thumbnail_6 img {
   display: block;
+  margin-top: 50px;
   width: 100%;
 }
 
@@ -550,6 +562,7 @@ section.info p {
 
 footer {
   padding: 3rem;
+  margin-top: 62px;
   background-size: 100%;
   background-color: #f2f2f2;
   display: flex;
