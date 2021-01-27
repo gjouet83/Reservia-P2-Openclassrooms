@@ -456,18 +456,69 @@ section.info p {
   margin-right: 0;
 }
 
-.activities_picture {
+.activities_picture_1 {
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  height: 426px;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+}
+
+.activities_picture_2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 180px;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+}
+
+.activities_picture_3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 109px;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+}
+
+.activities_picture_4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 426px;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+}
+
+.activities_picture_5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 140px;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+}
+
+.activities_picture_6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 153px;
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
 }
 
 .activities_thumbnail_1 img {
   display: block;
-  width: 250%;
+  width: 220%;
 }
 
 .activities_thumbnail_2 img {
