@@ -168,12 +168,13 @@ section.intro p {
 }
 
 .filters_button {
-  position: relative;
   display: flex;
   align-items: center;
+  position: relative;
   border: 2px solid #f2f2f2;
   border-radius: 27px;
   border-left: none;
+  height: 46px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -183,6 +184,7 @@ section.intro p {
   align-items: center;
   justify-content: center;
   position: absolute;
+  left: -1px;
   background-color: #deebff;
   border-radius: 27px;
   width: 50px;
@@ -190,16 +192,17 @@ section.intro p {
 }
 
 .filters_button i {
+  display: block;
   color: #0065fc;
 }
 
 .filters a {
   display: block;
-  border-radius: 28px;
+  border-radius: 27px;
   white-space: nowrap;
   padding-top: 14px;
   padding-bottom: 14px;
-  padding-left: 61px;
+  padding-left: 63px;
   padding-right: 22px;
 }
 
@@ -213,15 +216,24 @@ section.intro p {
 section.info {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   margin-top: 35px;
   margin-bottom: 37px;
   padding-left: 9px;
 }
 
-section.info img {
-  display: block;
+.icon_info {
   width: 24px;
   height: 24px;
+  border: 1px solid #f2f2f2;
+  border-radius: 27px;
+  text-align: center;
+}
+
+section.info i {
+  padding-top: 6px;
+  color: #0065fc;
+  font-size: 0.8rem;
 }
 
 section.info h4 {
@@ -234,21 +246,6 @@ section.info h4 {
   display: grid;
   grid-template-columns: 7fr 3fr;
   grid-gap: 2rem;
-}
-
-#results h3 {
-  font-family: "RalewayBold";
-  font-size: 1rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0;
-  padding-left: 1rem;
-}
-
-#results p {
-  font-size: 0.8rem;
-  margin-top: 0.3rem;
-  margin-bottom: 0.5rem;
-  padding-left: 1rem;
 }
 
 #results span {
@@ -272,41 +269,53 @@ section.info h4 {
 
 .results_area {
   border-radius: 20px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 40px;
   background-color: #f2f2f2;
+}
+
+.results_area h3 {
+  font-family: "RalewayBold";
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  padding-left: 1rem;
 }
 
 .results_area h2 {
   font-size: 1.36rem;
-  padding-left: 20px;
   margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.results_area p {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
   margin-bottom: 0.5rem;
+  padding-left: 1rem;
 }
 
 .thumbnails {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
+  gap: 31px;
 }
 
 .thumbnail {
   box-shadow: 0px 5px 10px #ccc8c8;
   border-radius: 16px;
   background-color: white;
-  margin: 14px;
+
 }
 
 .pictures {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
-  margin-top: 6px;
+  margin: 6px;
   overflow: hidden;
-  width: 95%;
+  min-height: 100px;
+  max-height: 300px;
   height: 114px;
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
@@ -321,7 +330,6 @@ section.info h4 {
 
 .more {
   margin-top: 40px;
-  padding-left: 14px;
 }
 
 .more a {
@@ -376,7 +384,7 @@ section.info h4 {
   margin: 6px;
   border-top-left-radius: 11px;
   border-bottom-left-radius: 11px;
-  width: 40%;
+  width: 35%;
 }
 
 .famous_picture img {
@@ -390,8 +398,18 @@ section.info h4 {
   width: 55%;
 }
 
+.description h3 {
+  font-family: "RalewayBold";
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding-left: 1rem;
+}
 .description p {
-  padding-bottom: 2rem;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  margin-bottom: 40px;
+  padding-left: 1rem;
 }
 
 /* Activités à Marseille */
@@ -412,6 +430,7 @@ section.info h4 {
 .activities_thumbnails {
   display: grid;
   grid-template-columns: repeat(4, 2.5fr);
+  column-gap: 43px;
 }
 
 .activities_thumbnail_1 {
@@ -420,7 +439,7 @@ section.info h4 {
   box-shadow: 0px 5px 10px #ccc8c8;
   border-radius: 12px;
   background-color: white;
-  margin-right: 31px;
+
 }
 
 .activities_thumbnail_2 {
@@ -429,8 +448,6 @@ section.info h4 {
   box-shadow: 0px 5px 10px #ccc8c8;
   border-radius: 12px;
   background-color: white;
-  margin-left: 11px;
-  margin-right: 21px;
 }
 
 .activities_thumbnail_3 {
@@ -440,8 +457,6 @@ section.info h4 {
   border-radius: 12px;
   background-color: white;
   margin-top: 43px;
-  margin-left: 11px;
-  margin-right: 21px;
 }
 
 .activities_thumbnail_4 {
@@ -450,8 +465,7 @@ section.info h4 {
   box-shadow: 0px 5px 10px #ccc8c8;
   border-radius: 12px;
   background-color: white;
-  margin-left: 21px;
-  margin-right: 11px;
+
 }
 
 .activities_thumbnail_5 {
@@ -460,8 +474,7 @@ section.info h4 {
   box-shadow: 0px 5px 10px #ccc8c8;
   border-radius: 12px;
   background-color: white;
-  margin-bottom: 45px;
-  margin-left: 31px;
+  margin-bottom: 43px;
 }
 
 .activities_thumbnail_6 {
@@ -470,7 +483,7 @@ section.info h4 {
   box-shadow: 0px 5px 10px #ccc8c8;
   border-radius: 12px;
   background-color: white;
-  margin-left: 31px;
+
 }
 
 .activities_picture_1 {
@@ -498,7 +511,7 @@ section.info h4 {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  height: 109px;
+  height: 110px;
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
 }
@@ -537,7 +550,7 @@ section.info h4 {
   display: block;
   margin-top: 40px;
   min-height: 140%;
-  width: 250%;
+  width: 240%;
 }
 
 .activities_thumbnail_2 img {
@@ -583,7 +596,6 @@ footer {
   background-size: 100%;
   background-color: #f2f2f2;
   display: flex;
-  justify-content: space-between;
 }
 
 footer span {
@@ -601,7 +613,9 @@ footer li {
 footer ul {
   padding-left: 0;
 }
-
-.help {
-  padding-right: 400px;
+.about {
+  margin-left: 0;
+}
+.help, .about, .charter {
+  margin-right: auto;
 }
