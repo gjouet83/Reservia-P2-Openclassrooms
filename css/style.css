@@ -53,30 +53,32 @@ header {
 
 /* Nav */
 
-.mobile {
-  display: none;
-}
-
-.desktop {
+nav {
   display: flex;
+  margin-left: auto;
 }
 
-.desktop ul {
+nav ul {
+  width: 310px;
   padding-left: 0;
   margin-top: 0;
   display: flex;
   list-style-type: none;
 }
 
-.desktop a {
+nav li {
+  width: 155px;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
   display: block;
-  padding-top: 52px;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 52px 25px 0 25px;
   border: 1px solid #ffffff;
 }
 
-.desktop a:hover {
+nav a:hover {
   border-top: 1px solid #0065fc;
   color: #0065fc;
 }
@@ -143,9 +145,9 @@ section.intro p {
 
 .entry_field {
   display: block;
-  min-width: 200px;
-  max-width: 250px;
-  width: 250px;
+  min-width: 180px;
+  max-width: 300px;
+  width: 19%;
   padding-left: 1rem;
   padding-right: 1rem;
   border-top: 1px solid #f2f2f2;
@@ -327,12 +329,14 @@ section.info i {
   grid-template-columns: repeat( 3, 1fr);
   gap: 31px;
 }
+
 .thumbnail {
   box-shadow: 0px 5px 10px #ccc8c8;
   border-radius: 16px;
   background-color: white;
   min-width: 220px;
 }
+
 .pictures {
   display: flex;
   align-items: center;
@@ -393,7 +397,7 @@ section.info i {
 .famous_thumbnail {
   display: flex;
   height: 144px;
-  min-width: 287px;
+  min-width: 280px;
   box-shadow: 0px 5px 10px #ccc8c8;
   border-radius: 18px;
   background-color: white;
@@ -432,6 +436,9 @@ section.info i {
 
 .description {
   width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .description h3 {
@@ -441,10 +448,9 @@ section.info i {
   margin-bottom: 0;
   padding-left: 1rem;
 }
+
 .description p {
   font-size: 0.8rem;
-  margin-top: 0.3rem;
-  margin-bottom: 40px;
   padding-left: 1rem;
 }
 
@@ -666,9 +672,9 @@ footer ul {
   margin-right: auto;
 }
 
-/* Smartphones (portrait) ----------- */
-@media all and (max-width: 480px){
-  /* Layout Général */
+/* Smartphones portrait et paysage ----------- */
+@media all and (max-width: 768px){
+  /* Smartphones Layout Général */
 
   html {
     font-size: 16px;
@@ -679,56 +685,90 @@ footer ul {
     margin-right: 0;
   }
 
-  /* Header */
+  /* Smartphones Header */
   header {
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 130px;
+    padding-top: 20px;
   }
 
   .logo {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
     padding-left: 0;
     margin-left: 20px;
   }
 
-  /* Nav */
-  .desktop ul {
-    display: none;
+  .logo a {
+    display: block;
   }
 
-  .mobile {
-    display: flex;
-    justify-content: space-around;
+  /* Smartphones Nav */
+
+  nav {
+    grid-column: 1/3;
+    grid-row: 2;
+    margin-left: 0;
+    align-items: flex-end;
+    justify-content: space-between;
   }
 
-  .mobile ul {
-    padding-left: 0;
-    margin-top: 0;
-    display: flex;
+  nav ul {
+    width: 100%;
+    margin-bottom: 0;
     list-style-type: none;
   }
 
-  .mobile a {
+  nav li {
+    width: 50%;
+  }
+
+  .lodging {
     display: block;
-    padding-top: 40px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 15px;
+    text-align: center;
+    width: 69%;
+    padding-top: 0px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 18px;
     border-bottom: 3px solid #f2f2f2;
   }
 
-  .mobile a:hover {
+  .action {
+    display: block;
+    text-align: center;
+    width: 39%;
+    padding-top: 0px;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 18px;
+    border-bottom: 3px solid #f2f2f2;
+  }
+
+  nav a:hover {
+    border-top: none;
     border-bottom: 3px solid #0065fc;
     color: #0065fc;
   }
 
-  .sign_up a {
-    margin-right: 20px;
-    padding-right: 0;
+  .sign_up {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 
-  /* Section intro */
+  .sign_up a {
+    display: block;
+    margin-right: 20px;
+    padding: 0;
+  }
+
+  /* Smartphones Section intro */
 
   section.intro h1 {
-    margin-top: 40px;
+    margin-top: 35px;
     margin-left: 20px;
     margin-right: 20px;
     padding-left: 0;
@@ -736,15 +776,19 @@ footer ul {
 
   section.intro p {
     font-size: 1rem;
-    margin: 8px 20px 20px 20px ;
+    margin: 12px 20px 30px 20px ;
     padding-left: 0;
   }
 
-  /* Section search */
+  /* Smartphones Section search */
 
   .location {
     width: 50px;
     margin-left: 20px;
+  }
+
+  .entry_field {
+    width: 70%;
   }
 
   .search_button {
@@ -764,9 +808,10 @@ footer ul {
     cursor: pointer;
   }
 
-  /* Filters */
+  /* Smartphones Filters */
 
   .filters {
+    margin-top: 15px;
     margin-left: 20px;
     padding-left: 0;
   }
@@ -792,7 +837,7 @@ footer ul {
     margin-bottom: 15px;
   }
 
-  /* Section info */
+  /* Smartphones Section info */
 
   section.info {
     align-items:baseline;
@@ -807,14 +852,14 @@ footer ul {
     margin-left: 10px;
   }
 
-  /* Section Results */
+  /* Smartphones Section Results */
 
   #results {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  /* résultats div gauche */
+  /* Smartphones résultats div gauche */
 
   .results_area {
     padding: 0px 20px 20px 20px;
@@ -826,15 +871,18 @@ footer ul {
   }
 
   .thumbnail {
+    display: block;
     height: 199px;
     margin-bottom: 20px;
+    padding: 6px;
   }
 
   .pictures {
     height: 114px;
+    margin: 0;
   }
 
-  /* résultats div droit */
+  /* Smartphones résultats div droit */
 
   .most_famous {
     border-radius: 0;
@@ -846,7 +894,7 @@ footer ul {
     margin-top: 12px;
   }
 
-  /* activités à Marseille */
+  /* Smartphones activités à Marseille */
 
   #activities {
     margin: 20px;
@@ -913,7 +961,7 @@ footer ul {
     height: 134px;
   }
 
-  /* footer */
+  /* Smartphones footer */
 
   footer {
     display: block;
