@@ -10,6 +10,8 @@
   src: url("../fonts/Raleway-Bold.ttf");
 }
 
+/* ----------- Desktop -----------*/
+/*---- Desktop Layout Général---- */
 html {
   font-size: 16px;
 }
@@ -20,8 +22,12 @@ body {
 }
 
 main {
-  margin-left: 50px;
-  margin-right: 50px;
+  max-width: 1590px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 3%;
+  padding-left: 3%;
+
 }
 
 a {
@@ -38,8 +44,7 @@ figure {
   margin: 0;
 }
 
-/* Header */
-
+/*---- Desktop Header ----*/
 header {
   display: flex;
   justify-content: space-between;
@@ -50,14 +55,14 @@ header {
   margin-top: 52px;
 }
 
-
-/* Nav */
-
+/*---- Desktop Nav ----*/
+/* mise en forme de la section */
 nav {
   display: flex;
   margin-left: auto;
 }
 
+/* liste lien hebergement et activités */
 nav ul {
   width: 310px;
   padding-left: 0;
@@ -83,6 +88,7 @@ nav a:hover {
   color: #0065fc;
 }
 
+/* "s'inscrire" <nav> */
 .sign_up a {
   display: block;
   padding-top: 52px;
@@ -94,12 +100,7 @@ nav a:hover {
   border: 1px solid #ffffff
 }
 
-.sign_up a:hover {
-  border-top: 1px solid #ffffff;
-}
-
-
-/* Section intro */
+/*---- Desktop Section intro ----*/
 
 section.intro h1 {
   margin-top: 50px;
@@ -114,7 +115,7 @@ section.intro p {
   padding-left: 4px;
 }
 
-/*Section search */
+/*---- Desktop Section search ----*/
 
 .search_bar {
   display: flex;
@@ -180,8 +181,8 @@ section.intro p {
   cursor: pointer;
 }
 
-/* les filtres */
-
+/*---- Desktop filters ----*/
+/* mise en forme de la section */
 .filters {
   margin-top: 35px;
   margin-bottom: 0;
@@ -192,10 +193,17 @@ section.intro p {
   font-family: "RalewayBold";
 }
 
+/* titre filtre */
+.filters p {
+  margin-right: 20px;
+}
+
+/* mise en forme des boutons filtres */
 .filters_buttons {
   display: flex;
 }
 
+/* lien et icone de chaque filtre */
 .filters_button {
   display: flex;
   align-items: center;
@@ -204,10 +212,10 @@ section.intro p {
   border-radius: 27px;
   border-left: none;
   height: 46px;
-  margin-left: 20px;
   margin-right: 20px;
 }
 
+/* icones des filtres */
 .icon {
   display: flex;
   align-items: center;
@@ -225,6 +233,7 @@ section.intro p {
   color: #0065fc;
 }
 
+/* liens des filtres */
 .filters a {
   display: block;
   border-radius: 27px;
@@ -240,8 +249,8 @@ section.intro p {
   color:#ffffff;
 }
 
-/*Section info */
-
+/*---- Desktop Section info ----*/
+/* mise en forme de la section */
 section.info {
   display: flex;
   align-items: center;
@@ -269,14 +278,15 @@ section.info i {
   font-size: 0.8rem;
 }
 
-/* Section Results*/
-
+/*----Desktop Section Results ----*/
+/* mise en forme de la section */
 #results {
   display: grid;
   grid-template-columns: 7fr 3fr;
   grid-gap: 2rem;
 }
 
+/* euros et prix les moins cher vignettes */
 #results span {
   font-family: "RalewayBold";
   font-size: 1rem;
@@ -284,6 +294,7 @@ section.info i {
   margin-bottom: 0;
 }
 
+/* étoiles dans les vignettes */
 .scoring i {
   font-size: 0.8rem;
   color: #0065fc;
@@ -294,14 +305,15 @@ section.info i {
   margin-bottom: 8px;
 }
 
-/* résultats div gauche */
-
+/*---- Desktop résultats div gauche ----*/
+/* mise en forme de la section */
 .results_area {
   border-radius: 20px;
   padding: 40px;
   background-color: #f2f2f2;
 }
 
+/* nom des hôtels */
 .results_area h3 {
   font-family: "RalewayBold";
   font-size: 1rem;
@@ -310,12 +322,14 @@ section.info i {
   padding-left: 1rem;
 }
 
+/* titres hebergement à marseille */
 .results_area h2 {
   font-size: 1.36rem;
   margin-top: 0;
   margin-bottom: 1.5rem;
 }
 
+/* prix des nuits div de gauche */
 .results_area p {
   font-size: 0.8rem;
   margin-top: 0.3rem;
@@ -323,6 +337,7 @@ section.info i {
   padding-left: 1rem;
 }
 
+/* vignettes div gauche */
 .thumbnails {
   display: grid;
   justify-content: center;
@@ -334,20 +349,8 @@ section.info i {
   box-shadow: 0px 5px 10px #ccc8c8;
   border-radius: 16px;
   background-color: white;
+  padding: 6px;
   min-width: 220px;
-}
-
-.pictures {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 6px;
-  overflow: hidden;
-  min-height: 100px;
-  max-height: 300px;
-  height: 150px;
-  border-top-left-radius: 13px;
-  border-top-right-radius: 13px;
 }
 
 .thumbnail:hover {
@@ -355,13 +358,26 @@ section.info i {
   cursor: pointer;
 }
 
-.pictures img {
-  display: block;
-  min-width: 100%;
-  min-height: 100%;
-  width: 100%;
+/* figures div gauche */
+.pictures {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 120px;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
 }
 
+/* images figures div gauche */
+.pictures img {
+  display: block;
+  min-height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* "afficher plus" div gauche */
 .more {
   margin-top: 40px;
 }
@@ -370,17 +386,15 @@ section.info i {
   font-family: "RalewayBold";
 }
 
-/* résultats div droit */
-
+/*---- Desktop résultats div droit ----*/
+/* mise en forme de la section */
 .most_famous {
   border-radius: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px;
   background-color: #f2f2f2;
 }
 
+/* header div droite */
 .header_pop {
   display: flex;
   align-items: center;
@@ -390,10 +404,12 @@ section.info i {
   margin-bottom: 26px;
 }
 
+/* logo div de droite */
 .header_pop img {
   height: 1.36rem;
 }
 
+/* vignettes les plus populaires*/
 .famous_thumbnail {
   display: flex;
   height: 144px;
@@ -409,13 +425,7 @@ section.info i {
   cursor: pointer;
 }
 
-.famous_thumbnail p {
-  font-size: 1rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  padding-left: 1rem;
-}
-
+/* figures div de droite */
 .famous_picture {
   display: flex;
   align-items: center;
@@ -424,16 +434,18 @@ section.info i {
   margin: 6px;
   border-top-left-radius: 11px;
   border-bottom-left-radius: 11px;
-  width: 35%;
+  width: 40%;
 }
 
+/* images des vignettes div de droite */
 .famous_picture img {
   display: block;
-  max-height: 150%;
   min-height: 100%;
-  width: 160%;
+  width: 130%;
+  object-fit: cover;
 }
 
+/* div de droite de la vignette poupulaire */
 .description {
   width: 55%;
   display: flex;
@@ -441,6 +453,7 @@ section.info i {
   justify-content: space-between;
 }
 
+/* nom de l'hôtel div de droite */
 .description h3 {
   font-family: "RalewayBold";
   font-size: 1rem;
@@ -449,13 +462,14 @@ section.info i {
   padding-left: 1rem;
 }
 
+/* prix de la nuit div de droite */
 .description p {
   font-size: 0.8rem;
   padding-left: 1rem;
 }
 
-/* Activités à Marseille */
-
+/*---- Desktop Activités à Marseille ----*/
+/* nom de l'activité */
 #activities h3 {
   font-family: "RalewayBold";
   font-size: 1rem;
@@ -464,190 +478,151 @@ section.info i {
   padding-left: 1rem;
 }
 
+/* titre activités à marseille */
 #activities h2 {
   margin-top: 65px;
   margin-bottom: 1rem;
 }
 
+/* vignettes section activitées */
 .activities_thumbnails {
   display: grid;
   grid-template-columns: repeat(4, 2.5fr);
   column-gap: 43px;
 }
 
-.activities_thumbnail_1 {
-  grid-column: 1;
-  grid-row: 1/3;
+.activities_thumbnail_1,
+.activities_thumbnail_2,
+.activities_thumbnail_3,
+.activities_thumbnail_4,
+.activities_thumbnail_5,
+.activities_thumbnail_6 {
   box-shadow: 0px 5px 10px #ccc8c8;
   border-radius: 12px;
   background-color: white;
   min-width: 263px;
+}
+
+.activities_thumbnail_1 {
+  grid-column: 1;
+  grid-row: 1/3;
 }
   
 .activities_thumbnail_2 {
   grid-column: 2;
   grid-row: 1;
-  box-shadow: 0px 5px 10px #ccc8c8;
-  border-radius: 12px;
-  background-color: white;
-  min-width: 263px;
 }
   
 .activities_thumbnail_3 {
   grid-column: 2;
   grid-row: 2;
-  box-shadow: 0px 5px 10px #ccc8c8;
-  border-radius: 12px;
-  background-color: white;
   margin-top: 43px;
-  min-width: 263px;
 }
   
 .activities_thumbnail_4 {
   grid-column: 3;
   grid-row: 1/3;
-  box-shadow: 0px 5px 10px #ccc8c8;
-  border-radius: 12px;
-  background-color: white;
-  min-width: 263px;
 }
   
 .activities_thumbnail_5 {
   grid-column: 4;
   grid-row: 1;
-  box-shadow: 0px 5px 10px #ccc8c8;
-  border-radius: 12px;
-  background-color: white;
   margin-bottom: 43px;
-  min-width: 263px;
 }
   
 .activities_thumbnail_6 {
   grid-column: 4;
   grid-row: 2;
-  box-shadow: 0px 5px 10px #ccc8c8;
-  border-radius: 12px;
-  background-color: white;
-  min-width: 263px;
 } 
 
-.activities_thumbnail_1:hover, .activities_thumbnail_2:hover, .activities_thumbnail_3:hover,.activities_thumbnail_4:hover, .activities_thumbnail_5:hover, .activities_thumbnail_6:hover {
+.activities_thumbnail_1:hover, 
+.activities_thumbnail_2:hover, 
+.activities_thumbnail_3:hover,
+.activities_thumbnail_4:hover, 
+.activities_thumbnail_5:hover, 
+.activities_thumbnail_6:hover {
   box-shadow: 0px 5px 30px black;
   cursor: pointer;
 }
 
-.activities_picture_1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  height: 390px;
-  border-top-left-radius: 13px;
-  border-top-right-radius: 13px;
-}
-
-.activities_picture_2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  height: 180px;
-  border-top-left-radius: 13px;
-  border-top-right-radius: 13px;
-}
-
-.activities_picture_3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  height: 110px;
-  border-top-left-radius: 13px;
-  border-top-right-radius: 13px;
-}
-
-.activities_picture_4 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  height: 390px;
-  border-top-left-radius: 13px;
-  border-top-right-radius: 13px;
-}
-
-.activities_picture_5 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  height: 140px;
-  border-top-left-radius: 13px;
-  border-top-right-radius: 13px;
-}
-
+/* figures section activités*/
+.activities_picture_1,
+.activities_picture_2,
+.activities_picture_3,
+.activities_picture_4,
+.activities_picture_5,
 .activities_picture_6 {
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  height: 153px;
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
 }
 
-.activities_thumbnail_1 img {
+.activities_picture_1 {
+  height: 390px;
+}
+
+.activities_picture_2 {
+  height: 180px;
+}
+
+.activities_picture_3 {
+  height: 110px;
+}
+
+.activities_picture_4 {
+  height: 390px;
+}
+
+.activities_picture_5 {
+  height: 140px;
+}
+
+.activities_picture_6 {
+  height: 140px;
+}
+
+/* images des figures section activités*/
+.activities_thumbnail_1 img,
+.activities_thumbnail_2 img,
+.activities_thumbnail_3 img,
+.activities_thumbnail_4 img,
+.activities_thumbnail_5 img,
+.activities_thumbnail_6 img {
   display: block;
-  margin-top: 40px;
-  min-height: 140%;
+  object-fit: cover;
+}
+
+.activities_thumbnail_1 img, .activities_thumbnail_4 img {
   width: 240%;
 }
 
-.activities_thumbnail_2 img {
-  display: block;
-  margin-top: 40px;
-  min-height: 140%;
-  width: 100%;
-}
-
-.activities_thumbnail_3 img {
-  display: block;
-  margin-top: 40px;
-  min-height: 140%;
-  width: 100%;
-}
-
-.activities_thumbnail_4 img {
-  display: block;
-  margin-top: 40px;
-  min-height: 140%;
-  width: 230%;
-}
-
-.activities_thumbnail_5 img {
-  display: block;
-  margin-top: 40px;
-  min-height: 140%;
-  width: 100%;
-}
-
+.activities_thumbnail_2 img,
+.activities_thumbnail_3 img,
+.activities_thumbnail_5 img,
 .activities_thumbnail_6 img {
-  display: block;
-  margin-top: 40px;
-  min-height: 140%;
   width: 100%;
 }
 
-/* Footer */
-
+/*---- Desktop Footer ----*/
+/* mise en forme de la section */
 footer {
   padding: 0 3rem 3rem 3rem;
   margin-top: 62px;
   background-size: 100%;
   background-color: #f2f2f2;
-  display: flex;
 }
 
+.footer_lists {
+  display: flex;
+  max-width: 1590px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* titres des listes*/
 footer span {
   display:block;
   font-family: "RalewayBold";
@@ -656,36 +631,242 @@ footer span {
   font-size: 1rem;
 }
 
+/* mise en forme des listes */
+footer ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
 footer li {
   margin-top: 0.5rem;
   list-style: none;
 }
 
-footer ul {
-  padding-left: 0;
-  margin-bottom: 0;
-}
+/* marge entre les listes*/
 .about {
   margin-left: 0;
 }
+
 .help, .about, .charter {
   margin-right: auto;
 }
 
-/* Smartphones portrait et paysage ----------- */
-@media all and (max-width: 768px){
-  /* Smartphones Layout Général */
-
-  html {
-    font-size: 16px;
-  }
-
+/* ----------- Tablettes -----------*/
+@media all and (max-width: 1279px) {
+  /*---- Tablettes Layout Général---- */
   main {
     margin-left: 0;
     margin-right: 0;
   }
 
-  /* Smartphones Header */
+  /*---- Tablettes Header ----*/
+  .logo {
+    padding-left: 0px;
+    margin-left: 20px;
+  }
+
+  /*---- Tablettes Section intro ----*/
+
+  section.intro h1 {
+    margin-left: 20px;
+    padding-left: 0;
+  }
+
+  section.intro p {
+    margin: 12px 20px 30px 20px ;
+    padding-left: 0;
+  }
+
+  /*---- Tablettes Section search ----*/
+
+  .search_bar {
+    margin-left: 20px;
+  }
+
+  /*---- Tablettes filters ----*/
+  /* mise en forme de la section */
+  .filters {
+    padding-left: 22px;
+  }
+
+  /* titre filtre */
+  .filters p {
+    margin-top: 0;
+  }
+
+  /* mise en forme des boutons filtres */
+  .filters_buttons {
+    margin-bottom: 0;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-family: "RalewayBold";
+  }
+
+  /* lien et icone de chaque filtre */
+  .filters_button {
+    margin: 0 10px 15px 0;
+  }
+
+  /*---- Tablettes Section info ----*/
+  /* mise en forme de la section */
+  section.info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding-left: 0;
+  }
+
+  /*----Tablettes Section Results ----*/
+  /* mise en forme de la section */
+  #results {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /*---- Tablettes résultats div dessous ----*/
+  /* mise en forme de la section */
+  .results_area {
+    padding: 20px;
+  }
+
+  /* figures div de dessous */
+  .pictures {
+    min-height: 100px;
+    max-height: 300px;
+    height: 150px;
+  }
+
+  /*---- Tablettes résultats div de dessus ----*/
+  /* mise en forme de la section */
+  .most_famous {
+    padding: 20px 0 20px 0;
+  }
+
+  /* header div de dessus */
+  .header_pop {
+    margin-bottom: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  /* vignettes les plus populaires*/
+  .famous_thumbnails {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .famous_thumbnail {
+    width: 31%;
+    min-width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* figures div de dessus */
+  .famous_picture {
+    width: 35%;
+  }
+
+  /* images des vignettes div de dessus */
+  .famous_picture img {
+    max-height: 150%;
+    width: 160%;
+  }
+
+  /* div de droite de la vignette poupulaire */
+  .description {
+    width: 60%;
+  }
+
+  /* nom de l'hôtel div de droite */
+  .description h3 {
+    margin-top: 0.5rem;
+    padding-left: 0.7rem;
+  }
+
+  /* prix de la nuit div de droite */
+  .description p {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    padding-left: 0.8rem;
+  }
+
+  /*---- Tablettes Activités à Marseille ----*/
+  /* nom de l'activité */
+  #activities {
+    margin: 20px;
+  }
+
+  /* vignettes section activitées */
+  .activities_thumbnails {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 31px;
+  }
+
+  .activities_thumbnail_1,
+  .activities_thumbnail_2,
+  .activities_thumbnail_3,
+  .activities_thumbnail_4,
+  .activities_thumbnail_5,
+  .activities_thumbnail_6 {
+    height: 190px;
+    margin-top: 23px;
+    min-width: 220px;
+  }
+
+  .activities_thumbnail_1 {
+    grid-column: 1;
+  }
+
+  .activities_thumbnail_3 {
+    grid-column: 3;
+    grid-row: 1;
+    margin-top: 23px;
+  }
+    
+  .activities_thumbnail_4 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+    
+  .activities_thumbnail_5 {
+    grid-column: 2;
+    grid-row: 2;
+    margin-bottom: 0px;
+  }
+    
+  .activities_thumbnail_6 {
+    grid-column: 3;
+    grid-row: 2;
+  } 
+
+  /* figures section activités*/
+  .activities_picture_1, 
+  .activities_picture_2, 
+  .activities_picture_3, 
+  .activities_picture_4, 
+  .activities_picture_5, 
+  .activities_picture_6 {
+    height: 134px;
+  }
+
+  /* images des figures section activités*/
+  .activities_thumbnail_1 img,
+  .activities_thumbnail_2 img,
+  .activities_thumbnail_3 img,
+  .activities_thumbnail_4 img,
+  .activities_thumbnail_5 img,
+  .activities_thumbnail_6 img {
+    margin-top: 40px;
+    min-height: 140%;
+  }
+}
+
+/*----------- Smartphones -----------*/
+@media all and (max-width: 768px){
+  /*---- Smartphones Header ----*/
   header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -697,16 +878,14 @@ footer ul {
     display: flex;
     align-items: center;
     margin-top: 0px;
-    padding-left: 0;
-    margin-left: 20px;
   }
 
   .logo a {
     display: block;
   }
 
-  /* Smartphones Nav */
-
+  /*---- Smartphones Nav ----*/
+  /* mise en forme de la section */
   nav {
     grid-column: 1/3;
     grid-row: 2;
@@ -715,20 +894,21 @@ footer ul {
     justify-content: space-between;
   }
 
+  /* liste lien hebergement et activités */
   nav ul {
     width: 100%;
     margin-bottom: 0;
-    list-style-type: none;
   }
 
   nav li {
     width: 50%;
   }
 
+  /* lien hebergement */
   .lodging {
     display: block;
     text-align: center;
-    width: 69%;
+    width: 70%;
     padding-top: 0px;
     padding-left: 15%;
     padding-right: 15%;
@@ -736,10 +916,11 @@ footer ul {
     border-bottom: 3px solid #f2f2f2;
   }
 
+  /* lien activité */
   .action {
     display: block;
     text-align: center;
-    width: 39%;
+    width: 45%;
     padding-top: 0px;
     padding-left: 30%;
     padding-right: 30%;
@@ -750,9 +931,9 @@ footer ul {
   nav a:hover {
     border-top: none;
     border-bottom: 3px solid #0065fc;
-    color: #0065fc;
   }
 
+   /* "s'inscrire" <nav> */
   .sign_up {
     display: flex;
     align-items: center;
@@ -760,27 +941,22 @@ footer ul {
   }
 
   .sign_up a {
-    display: block;
     margin-right: 20px;
     padding: 0;
   }
 
-  /* Smartphones Section intro */
+  /*---- Smartphones Section intro ----*/
 
   section.intro h1 {
-    margin-top: 35px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-left: 0;
+    margin: 35px 20px 0 20px;
   }
 
-  section.intro p {
-    font-size: 1rem;
-    margin: 12px 20px 30px 20px ;
+  /*---- Smartphones Section search ----*/
+  /* mise en forme de la section */
+  .search_bar {
     padding-left: 0;
+    margin-left: 0;
   }
-
-  /* Smartphones Section search */
 
   .location {
     width: 50px;
@@ -788,7 +964,7 @@ footer ul {
   }
 
   .entry_field {
-    width: 70%;
+    width: 70%; 
   }
 
   .search_button {
@@ -808,43 +984,24 @@ footer ul {
     cursor: pointer;
   }
 
-  /* Smartphones Filters */
-
+  /*---- Smartphones Filters ----*/
+  /* mise en forme de la section */
   .filters {
     margin-top: 15px;
     margin-left: 20px;
     padding-left: 0;
   }
 
-  .filters_buttons {
-    margin-bottom: 0;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    font-family: "RalewayBold";
+  /* titre filtre */
+  .filters p {
+    margin-right: 20px;
   }
 
-  .filters_button {
-    display: flex;
-    align-items: center;
-    position: relative;
-    border: 2px solid #f2f2f2;
-    border-radius: 27px;
-    border-left: none;
-    height: 46px;
-    margin-left: 0;
-    margin-right: 10px;
-    margin-bottom: 15px;
-  }
-
-  /* Smartphones Section info */
-
+  /*---- Smartphones Section info ----*/
+  /* mise en forme de la section */
   section.info {
-    align-items:baseline;
+    align-items: baseline;
     margin-top: 0;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    padding-left: 0;
   }
 
   section.info h4 {
@@ -852,119 +1009,128 @@ footer ul {
     margin-left: 10px;
   }
 
-  /* Smartphones Section Results */
-
+  /*---- Smartphones Section Results ----*/
+  /* mise en forme de la section */
   #results {
-    display: flex;
-    flex-direction: column-reverse;
+    grid-gap: 0;
   }
 
-  /* Smartphones résultats div gauche */
-
+  /*---- Smartphones résultats div dessous ----*/
+  /* mise en forme de la section */
   .results_area {
+    margin-top: 40px;
     padding: 0px 20px 20px 20px;
     background-color: white;
   }
 
+  /* vignettes div dessous */
   .thumbnails {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 0;
   }
 
   .thumbnail {
     display: block;
     height: 199px;
-    margin-bottom: 20px;
-    padding: 6px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 288px;
   }
 
+  /* figures div dessous */
   .pictures {
     height: 114px;
-    margin: 0;
   }
 
-  /* Smartphones résultats div droit */
-
+  /*---- Smartphones résultats div droit ----*/
+  /* mise en forme de la section */
   .most_famous {
     border-radius: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 40px 7% 40px 7%;
+  }
+
+  /* header div droite */
+  .header_pop {
+    margin-bottom: 26px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* vignettes les plus populaires*/
+  .famous_thumbnails {
+    display: block;
   }
 
   .famous_thumbnail {
+    width: auto;
+    min-width: 280px;
+    max-width: 650px;
     margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  /* Smartphones activités à Marseille */
+  /* div de droite de la vignette poupulaire */
+  .description {
+    width: 55%;
+  }
+  
+  /* nom de l'hôtel div de droite */
+  .description h3 {
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
 
+  /* prix de la nuit div de droite */
+  .description p {
+    font-size: 0.8rem;
+    padding-left: 1rem;
+  }
+
+  /*---- Smartphones activités à Marseille ----*/
+  /* mise en forme de la section */
   #activities {
-    margin: 20px;
+    margin: 15px;
   }
 
+  /* titre activités à marseille */
   #activities h2 {
     margin-top: 0;
-    margin-bottom: 1rem;
   }
 
+  /* vignettes section activités */
   .activities_thumbnails {
-    display: block ;
+    display: flex ;
+    flex-wrap: wrap;
+    grid-gap: 0;
   }
 
-  .activities_thumbnail_1 {
-    height: 190px;
-    box-shadow: 0px 5px 10px #ccc8c8;
-    border-radius: 12px;
-    background-color: white;
-    margin-top: 23px;
-  }
-  
-  .activities_thumbnail_2 {
-    height: 190px;
-    box-shadow: 0px 5px 10px #ccc8c8;
-    border-radius: 12px;
-    background-color: white;
-    margin-top: 23px;
-  }
-  
-  .activities_thumbnail_3 {
-    height: 190px;
-    box-shadow: 0px 5px 10px #ccc8c8;
-    border-radius: 12px;
-    background-color: white;
-    margin-top: 23px;
-  }
-  
-  .activities_thumbnail_4 {
-    height: 190px;
-    box-shadow: 0px 5px 10px #ccc8c8;
-    border-radius: 12px;
-    background-color: white;
-    margin-top: 23px;
-  }
-  
-  .activities_thumbnail_5 {
-    height: 190px;
-    box-shadow: 0px 5px 10px #ccc8c8;
-    border-radius: 12px;
-    background-color: white;
-    margin-top: 23px;
-  }
-  
+  .activities_thumbnail_1,
+  .activities_thumbnail_2,
+  .activities_thumbnail_3,
+  .activities_thumbnail_4,
+  .activities_thumbnail_5,
   .activities_thumbnail_6 {
-    height: 190px;
-    box-shadow: 0px 5px 10px #ccc8c8;
-    border-radius: 12px;
-    background-color: white;
-    margin-top: 23px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 263px;
+    max-width: 300px;
   }
 
-  .activities_picture_1, .activities_picture_2, .activities_picture_3, .activities_picture_4, .activities_picture_5, .activities_picture_6 {
-    height: 134px;
-  }
-
-  /* Smartphones footer */
-
+  /*---- Smartphones footer ----*/
+  /* mise en forme de la section */
   footer {
-    display: block;
     padding: 0 30px 30px 30px;
+  }
+
+  .footer_lists {
+    flex-wrap: wrap;
+  }
+  /* mise en forme des listes */
+  footer ul {
+    margin-right: 40px;
   }
 }
