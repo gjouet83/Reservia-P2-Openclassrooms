@@ -136,7 +136,6 @@ section.intro p {
   padding-right: 17px;
   padding-bottom: 15px;
   padding-top: 15px;
-  cursor: pointer;
 }
 
 .location img {
@@ -178,7 +177,6 @@ section.intro p {
   font-family: "RalewayBold";
   font-size: 1rem;
   color: white;
-  cursor: pointer;
 }
 
 /*---- Desktop filters ----*/
@@ -355,7 +353,6 @@ section.info i {
 
 .thumbnail:hover {
   box-shadow: 0px 5px 30px black;
-  cursor: pointer;
 }
 
 /* figures div gauche */
@@ -367,6 +364,9 @@ section.info i {
   height: 120px;
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
+} 
+.pictures a {
+  display: flex;
 }
 
 /* images figures div gauche */
@@ -422,7 +422,6 @@ section.info i {
 
 .famous_thumbnail:hover {
   box-shadow: 0px 5px 30px black;
-  cursor: pointer;
 }
 
 /* figures div de droite */
@@ -438,9 +437,14 @@ section.info i {
 }
 
 /* images des vignettes div de droite */
+.famous_picture a {
+  display: inline-flex;
+  justify-content: center;
+  height: 100%;
+}
+
 .famous_picture img {
   display: block;
-  min-height: 100%;
   width: 130%;
   object-fit: cover;
 }
@@ -542,19 +546,11 @@ section.info i {
 .activities_thumbnail_5:hover, 
 .activities_thumbnail_6:hover {
   box-shadow: 0px 5px 30px black;
-  cursor: pointer;
 }
 
 /* figures section activités*/
-.activities_picture_1,
-.activities_picture_2,
-.activities_picture_3,
-.activities_picture_4,
-.activities_picture_5,
-.activities_picture_6 {
+.activities_thumbnails figure{
   display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
@@ -581,29 +577,38 @@ section.info i {
 }
 
 .activities_picture_6 {
-  height: 140px;
+  height: 150px;
 }
 
 /* images des figures section activités*/
-.activities_thumbnail_1 img,
-.activities_thumbnail_2 img,
-.activities_thumbnail_3 img,
-.activities_thumbnail_4 img,
-.activities_thumbnail_5 img,
-.activities_thumbnail_6 img {
+
+.activities_picture_1 a,
+.activities_picture_2 a,
+.activities_picture_3 a,
+.activities_picture_4 a,
+.activities_picture_5 a,
+.activities_picture_6 a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.activities_thumbnail_1 img, .activities_thumbnail_4 img {
+  height: 110%;
+  width: 100%;
   display: block;
   object-fit: cover;
 }
 
-.activities_thumbnail_1 img, .activities_thumbnail_4 img {
-  width: 240%;
-}
-
 .activities_thumbnail_2 img,
 .activities_thumbnail_3 img,
 .activities_thumbnail_5 img,
 .activities_thumbnail_6 img {
-  width: 100%;
+  display: block;
+  object-fit: cover;
+  min-height: 140%;
+  width: 200%;
+  height: 100%;
 }
 
 /*---- Desktop Footer ----*/
@@ -722,6 +727,7 @@ footer li {
   #results {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: space-between;
   }
 
   /*---- Tablettes résultats div dessous ----*/
@@ -735,6 +741,10 @@ footer li {
   .pictures {
     min-height: 100px;
     max-height: 300px;
+    height: 150px;
+  }
+
+  .pictures a {
     height: 150px;
   }
 
@@ -845,23 +855,12 @@ footer li {
   } 
 
   /* figures section activités*/
-  .activities_picture_1, 
-  .activities_picture_2, 
-  .activities_picture_3, 
-  .activities_picture_4, 
-  .activities_picture_5, 
-  .activities_picture_6 {
+  .activities_thumbnails figure {
     height: 134px;
   }
 
   /* images des figures section activités*/
-  .activities_thumbnail_1 img,
-  .activities_thumbnail_2 img,
-  .activities_thumbnail_3 img,
-  .activities_thumbnail_4 img,
-  .activities_thumbnail_5 img,
-  .activities_thumbnail_6 img {
-    margin-top: 40px;
+  .activities_thumbnails img {
     min-height: 140%;
   }
 }
@@ -983,7 +982,6 @@ footer li {
     font-family: "RalewayBold";
     font-size: 1rem;
     color: white;
-    cursor: pointer;
   }
 
   /*---- Smartphones Filters ----*/
