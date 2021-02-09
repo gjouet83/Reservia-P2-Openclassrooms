@@ -25,8 +25,8 @@ main {
   max-width: 1590px;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 3%;
-  padding-left: 3%;
+  padding-right: 50px;
+  padding-left: 50px;
 
 }
 
@@ -348,7 +348,6 @@ section.info i {
   border-radius: 16px;
   background-color: white;
   padding: 6px;
-  min-width: 220px;
 }
 
 .thumbnail:hover {
@@ -372,7 +371,6 @@ section.info i {
 /* images figures div gauche */
 .pictures img {
   display: block;
-  min-height: 100%;
   width: 100%;
   object-fit: cover;
 }
@@ -484,7 +482,7 @@ section.info i {
 /* titre activités à marseille */
 #activities h2 {
   margin-top: 65px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 /* vignettes section activitées */
@@ -606,14 +604,14 @@ section.info i {
   display: block;
   object-fit: cover;
   height: 140%;
-  width: 200%;
+  width: 100%;
 }
 
 /*---- Desktop Footer ----*/
 /* mise en forme de la section */
 footer {
   padding: 0 3rem 3rem 3rem;
-  margin-top: 62px;
+  margin-top: 60px;
   background-size: 100%;
   background-color: #f2f2f2;
 }
@@ -806,7 +804,7 @@ footer li {
   /*---- Tablettes Activités à Marseille ----*/
   /* nom de l'activité */
   #activities {
-    margin: 20px;
+    margin: 20px 20px 50px 20px;
   }
 
   /* vignettes section activitées */
@@ -822,7 +820,6 @@ footer li {
   .activities_thumbnail_5,
   .activities_thumbnail_6 {
     height: 190px;
-    margin-top: 23px;
     min-width: 220px;
   }
 
@@ -833,7 +830,7 @@ footer li {
   .activities_thumbnail_3 {
     grid-column: 3;
     grid-row: 1;
-    margin-top: 23px;
+    margin-top: 0;
   }
     
   .activities_thumbnail_4 {
@@ -861,6 +858,11 @@ footer li {
   .activities_thumbnails img {
     height: 140%;
   }
+
+    /*---- footer ----*/
+    footer {
+      margin-top: 30px;
+    }
 }
 
 /*----------- Smartphones -----------*/
@@ -1017,7 +1019,7 @@ footer li {
   /* mise en forme de la section */
   .results_area {
     margin-top: 40px;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 15px 20px 15px;
     background-color: white;
   }
 
@@ -1111,7 +1113,7 @@ footer li {
   .activities_thumbnail_4,
   .activities_thumbnail_5,
   .activities_thumbnail_6 {
-    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     min-width: 263px;
