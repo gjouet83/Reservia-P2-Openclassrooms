@@ -458,7 +458,7 @@ section.info i {
 .description h3 {
   font-family: "RalewayBold";
   font-size: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.7rem;
   margin-bottom: 0;
   padding-left: 1rem;
 }
@@ -866,7 +866,7 @@ footer li {
 }
 
 /*----------- Smartphones -----------*/
-@media all and (max-width: 768px){
+@media all and (max-width: 768px) {
   /*---- Smartphones Header ----*/
   header {
     display: grid;
