@@ -79,7 +79,9 @@ nav li {
 
 nav a {
   display: block;
-  padding: 52px 25px 0 25px;
+  width: 100%;
+  text-align: center;
+  padding-top: 52px;
   border: 1px solid #ffffff;
 }
 
@@ -871,8 +873,8 @@ footer li {
   header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 130px;
-    padding-top: 20px;
+    height: 110px;
+    margin-top: 20px;
   }
 
   .logo {
@@ -905,27 +907,14 @@ footer li {
     width: 50%;
   }
 
-  /* lien hebergement */
-  .lodging {
-    display: block;
-    text-align: center;
-    width: 70%;
-    padding-top: 0px;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-bottom: 18px;
-    border-bottom: 3px solid #f2f2f2;
-  }
-
   /* lien activité */
-  .action {
+  nav a {
     display: block;
     text-align: center;
-    width: 45%;
+    width: 100%;
     padding-top: 0px;
-    padding-left: 30%;
-    padding-right: 30%;
     padding-bottom: 18px;
+    border-top: none;
     border-bottom: 3px solid #f2f2f2;
   }
 
