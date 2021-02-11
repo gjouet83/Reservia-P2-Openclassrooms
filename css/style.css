@@ -151,18 +151,20 @@ section.intro p {
   max-width: 300px;
   width: 19%;
   padding-left: 1rem;
-  padding-right: 1rem;
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
   border-left: none;
   border-right: none;
-  justify-content: left;
   font-family: "RalewayBold";
   font-size: 1rem;
 }
 
 .entry_field:focus {
   outline-style: none;
+}
+
+#location::placeholder {
+  color: black;
 }
 
 .search_button_mobile {
