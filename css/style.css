@@ -918,7 +918,7 @@ footer li {
     width: 100%;
     padding-top: 0px;
     padding-bottom: 18px;
-    border-top: none;
+    border: none;
     border-bottom: 3px solid #f2f2f2;
   }
 
@@ -998,7 +998,7 @@ footer li {
   }
 
   section.info h4 {
-    width: 300px;
+    margin-right: 20px;
     margin-left: 10px;
   }
 
