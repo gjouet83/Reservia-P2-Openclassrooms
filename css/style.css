@@ -254,6 +254,7 @@ section.info h4 {
 }
 
 .icon_info {
+  min-width: 24px;
   width: 24px;
   height: 24px;
   border: 1px solid #f2f2f2;
