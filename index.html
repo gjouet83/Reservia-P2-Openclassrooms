@@ -38,17 +38,11 @@
             <!-- section search avec 2 div -->
             <section class="search">
                 <!-- barre de recherche --> 
-                <form method="post" action="#">
-                    <div class="search_bar" data-children="1">
-                        <div class="location">
-                            <label for="location">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </label>
-                        </div>
-                        <input class="entry_field" type="search" name="location" required placeholder="Marseille, France" id="location" />
-                        <input class="search_button" type="submit" value="Rechercher" />
-                        <button class="search_button_mobile" name="search" type="submit"><i class="fas fa-search"></i></button>
-                    </div>
+                <form class="search_bar" method="post" action="#">
+                    <label class="location" for="location"><i class="fas fa-map-marker-alt"></i></label>
+                    <input class="entry_field" type="search" name="location" required placeholder="Marseille, France" id="location" />
+                    <button class="search_button" name="search" type="submit">Rechercher</button>
+                    <button class="search_button_mobile" name="search" type="submit"><i class="fas fa-search"></i></button>
                 </form>
                 <!-- filtres de recherche -->
                 <div class="filters">    

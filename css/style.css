@@ -47,7 +47,6 @@ figure {
 /*---- Desktop Header ----*/
 header {
   display: flex;
-  justify-content: space-between;
 }
 
 .logo {
@@ -73,8 +72,6 @@ nav ul {
 
 nav li {
   width: 155px;
-  display: flex;
-  justify-content: center;
 }
 
 nav a {
@@ -99,7 +96,6 @@ nav a:hover {
   border: 1px solid #ffffff;
   font-family: "RalewayBold";
   color: #0065fc;
-  border: 1px solid #ffffff
 }
 
 /*---- Desktop Section intro ----*/
@@ -125,32 +121,21 @@ section.intro p {
 }
 
 .location {
-  max-width: 50px;
-  min-width: 40px;
+  display: block;
+  width: 50px;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  cursor: pointer;
   background-color: #f2f2f2;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
 }
 
-.location label {
-  display: block;
-  padding-left: 17px;
-  padding-right: 17px;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  cursor: pointer;
-}
-
-.location img {
-  width: 16px;
-  height: 16px;
-}
-
 .entry_field {
   display: block;
-  min-width: 180px;
-  max-width: 300px;
-  width: 19%;
+  width: 234px;
+  height: 50px;
   padding-left: 1rem;
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
@@ -173,6 +158,7 @@ section.intro p {
 }
 
 .search_button {
+  display: block;
   width: 134px;
   height: 50px;
   border: none;
@@ -258,7 +244,6 @@ section.intro p {
 section.info {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   margin-top: 35px;
   margin-bottom: 37px;
   padding-left: 9px;
@@ -328,7 +313,6 @@ section.info i {
 
 /* titres hebergement à marseille */
 .results_area h2 {
-  font-size: 1.36rem;
   margin-top: 0;
   margin-bottom: 1.5rem;
 }
@@ -344,7 +328,6 @@ section.info i {
 /* vignettes div gauche */
 .thumbnails {
   display: grid;
-  justify-content: center;
   grid-template-columns: repeat( 3, 1fr);
   gap: 31px;
 }
@@ -363,9 +346,9 @@ section.info i {
 /* figures div gauche */
 .pictures {
   display: flex;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   height: 120px;
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
@@ -376,7 +359,6 @@ section.info i {
 
 /* images figures div gauche */
 .pictures img {
-  display: block;
   width: 100%;
   object-fit: cover;
 }
@@ -430,8 +412,6 @@ section.info i {
 /* figures div de droite */
 .famous_picture {
   display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
   margin: 6px;
   border-top-left-radius: 11px;
@@ -441,7 +421,7 @@ section.info i {
 
 /* images des vignettes div de droite */
 .famous_picture a {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   height: 100%;
 }
@@ -705,7 +685,6 @@ footer li {
   /* mise en forme des boutons filtres */
   .filters_buttons {
     margin-bottom: 0;
-    justify-content: flex-start;
     flex-wrap: wrap;
     font-family: "RalewayBold";
   }
@@ -898,7 +877,6 @@ footer li {
     grid-row: 2;
     margin-left: 0;
     align-items: flex-end;
-    justify-content: space-between;
   }
 
   /* liste lien hebergement et activités */
@@ -953,7 +931,6 @@ footer li {
   }
 
   .location {
-    width: 50px;
     margin-left: 20px;
   }
 
@@ -980,7 +957,7 @@ footer li {
   /*---- Smartphones Filters ----*/
   /* mise en forme de la section */
   .filters {
-    margin-top: 15px;
+    margin-top: 35px;
     margin-left: 20px;
     padding-left: 0;
   }
@@ -1025,7 +1002,6 @@ footer li {
 
   .thumbnail {
     display: block;
-    height: 199px;
     margin-bottom: 12px;
     margin-left: auto;
     margin-right: auto;
