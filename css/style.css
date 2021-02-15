@@ -21,13 +21,20 @@ body {
   font-family: "RalewayReg";
 }
 
+header {
+  max-width: 1590px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
 main {
   max-width: 1590px;
   margin-left: auto;
   margin-right: auto;
   padding-right: 50px;
   padding-left: 50px;
-
 }
 
 a {
@@ -126,7 +133,6 @@ section.intro p {
   height: 50px;
   line-height: 50px;
   text-align: center;
-
   cursor: pointer;
   background-color: #f2f2f2;
   border-top-left-radius: 12px;
@@ -643,6 +649,12 @@ footer li {
 /* ----------- Tablettes -----------*/
 @media all and (max-width: 1279px) {
   /*---- Tablettes Layout Général---- */
+  header {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+
   main {
     margin-left: 0;
     margin-right: 0;
