@@ -51,6 +51,10 @@ figure {
   margin: 0;
 }
 
+.fas.fa-star.grey {
+  color: #f2f2f2;
+}
+
 /*---- Desktop Header ----*/
 header {
   display: flex;
