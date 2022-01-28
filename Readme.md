@@ -19,8 +19,14 @@ Projet n°2 du parcours développeur web chez OpenClassrooms qui a pour objectif
 - Le HTML et le CSS doivent être séparés et le dossier doit être organisé
 - Le code doit être versionné avec git et doit avoir un repo distant sur Github ou Gitlab
 
-## maquette version desktop
+## Maquette version desktop: 
+***
 ![maquette web reservia](./img/desktop.png)
 
-## maquette version mobile
+## Maquette version mobile:
+***
 ![maquette version mobile](./img/phone.png)
+
+## Lien vers la page réalisée:
+***
+[Réservia - Guillaume Jouet](https://gjouet83.github.io/Reservia-P2-Openclassrooms/)
